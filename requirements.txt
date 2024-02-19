@@ -2,3 +2,7 @@ sqlalchemy
 pandas
 python-dotenv
 requests
+fastavro
+psycopg2-binary
+confluent_kafka
+kafka-python

@@ -4,10 +4,10 @@
       "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
       "plugin.name": "pgoutput",
       "tasks.max": "1",
-      "database.hostname": "10.209.229.52",
+      "database.hostname": "postgres_db",
       "database.port": "5432",
-      "database.user": "admin",
-      "database.password": "secret",
+      "database.user": "postgres",
+      "database.password": "postgres",
       "database.dbname": "trades",
       "database.server.name": "postgres",
       "table.include.list": "public.quotes",
@@ -21,7 +21,7 @@
       "topic.creation.default.retention.ms": "604800000",
       "key.converter": "io.confluent.connect.avro.AvroConverter",
       "value.converter": "io.confluent.connect.avro.AvroConverter",
-      "key.converter.schema.registry.url": "http://10.209.229.52:8081",
-      "value.converter.schema.registry.url": "http://10.209.229.52:8081"
+      "key.converter.schema.registry.url": "http://schema-registry:8081",
+      "value.converter.schema.registry.url": "http://schema-registry:8081"
     }
 }
